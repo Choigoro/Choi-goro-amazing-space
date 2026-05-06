@@ -1,0 +1,16 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/categories/route": "/api/categories",
+  "/api/delete/route": "/api/delete",
+  "/api/health/route": "/api/health",
+  "/api/illustration/route": "/api/illustration",
+  "/api/linktree/route": "/api/linktree",
+  "/api/profile/route": "/api/profile",
+  "/api/upload/route": "/api/upload",
+  "/api/webtoon/route": "/api/webtoon",
+  "/illustration/page": "/illustration",
+  "/page": "/",
+  "/profile/page": "/profile",
+  "/webtoon/page": "/webtoon"
+}

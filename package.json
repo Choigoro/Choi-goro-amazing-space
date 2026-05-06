@@ -1,0 +1,19 @@
+{
+  "name": "choigoro-root",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "npm --prefix backend run dev",
+    "postinstall": "npm run build:frontend && npm run sync:backend",
+    "build": "npm run build:frontend && npm run sync:backend",
+    "build:frontend": "npm --prefix frontend run build",
+    "sync:backend": "node scripts/sync-frontend-build.mjs",
+    "start": "node backend/server.js"
+  }
+}

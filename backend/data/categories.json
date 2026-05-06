@@ -1,0 +1,32 @@
+[
+  {
+    "id": "profile",
+    "title": "Author",
+    "grayscaleImage": "/uploads/1776215370895-600726604-111.jpg",
+    "colorImage": "/uploads/1776215373406-901520644-111.jpg",
+    "href": "#",
+    "isModal": true
+  },
+  {
+    "id": "webtoon",
+    "title": "Webtoon",
+    "grayscaleImage": "/uploads/1776215382916-339059372-일러스트201.jpg",
+    "colorImage": "/uploads/1776215386548-411243659-일러스트201.jpg",
+    "href": "/webtoon"
+  },
+  {
+    "id": "illustration",
+    "title": "Illustration",
+    "grayscaleImage": "/uploads/1776215712690-980172011-123.jpg",
+    "colorImage": "/uploads/1776215716013-490139886-123.jpg",
+    "href": "/illustration"
+  },
+  {
+    "id": "linktree",
+    "title": "Link",
+    "grayscaleImage": "/uploads/1776215407458-398002520-일러스트57.jpg",
+    "colorImage": "/uploads/1776215410285-918007229-일러스트57.jpg",
+    "href": "#",
+    "isModal": true
+  }
+]

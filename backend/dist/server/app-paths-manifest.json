@@ -1,0 +1,16 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/categories/route": "app/api/categories/route.js",
+  "/api/delete/route": "app/api/delete/route.js",
+  "/api/health/route": "app/api/health/route.js",
+  "/api/illustration/route": "app/api/illustration/route.js",
+  "/api/linktree/route": "app/api/linktree/route.js",
+  "/api/profile/route": "app/api/profile/route.js",
+  "/api/upload/route": "app/api/upload/route.js",
+  "/api/webtoon/route": "app/api/webtoon/route.js",
+  "/illustration/page": "app/illustration/page.js",
+  "/page": "app/page.js",
+  "/profile/page": "app/profile/page.js",
+  "/webtoon/page": "app/webtoon/page.js"
+}
