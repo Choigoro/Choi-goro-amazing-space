@@ -1,4 +1,4 @@
-import { access, cp, mkdir, rm } from 'node:fs/promises';
+import { access, cp, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -23,9 +23,12 @@ async function ensureExists(directoryPath, label) {
 }
 
 async function syncDirectory(sourcePath, targetPath) {
-  await rm(targetPath, { recursive: true, force: true });
   await mkdir(path.dirname(targetPath), { recursive: true });
-  await cp(sourcePath, targetPath, { recursive: true, dereference: true });
+  await cp(sourcePath, targetPath, {
+    recursive: true,
+    dereference: true,
+    force: true,
+  });
 }
 
 await ensureExists(sourceDist, 'Frontend build output');
