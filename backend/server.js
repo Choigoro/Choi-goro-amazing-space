@@ -3,7 +3,10 @@ const path = require('path');
 const express = require('express');
 const cors = require('cors');
 
-const standaloneServer = path.join(__dirname, 'dist', 'standalone', 'server.js');
+const standaloneServerCandidates = [
+  path.join(__dirname, 'dist', 'standalone', 'frontend', 'server.js'),
+  path.join(__dirname, 'dist', 'standalone', 'server.js'),
+];
 const PORT = Number(process.env.PORT || 3000);
 const HOST = process.env.HOST || '0.0.0.0';
 const isDevelopmentCommand =
@@ -13,7 +16,11 @@ const isDevelopmentCommand =
 process.env.PORT = String(PORT);
 process.env.HOSTNAME = HOST;
 
-if (!isDevelopmentCommand && fs.existsSync(standaloneServer)) {
+const standaloneServer = standaloneServerCandidates.find((candidate) =>
+  fs.existsSync(candidate)
+);
+
+if (!isDevelopmentCommand && standaloneServer && fs.existsSync(standaloneServer)) {
   require(standaloneServer);
   return;
 }
